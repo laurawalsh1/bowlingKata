@@ -10,7 +10,11 @@ public class Game {
     }
 
     public int getScore() {
-        return 0;
+        int score =0;
+        for(int i =0;i < 21; i++){
+            score += rolls[i];
+        }
+        return score;
     }
 
 }
