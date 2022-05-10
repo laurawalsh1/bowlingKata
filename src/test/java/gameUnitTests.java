@@ -30,27 +30,27 @@ public class gameUnitTests {
         Assertions.assertThat(actual).isEqualTo(20);
     }
 
-    @Test
-    public void canRollASpareFollowedBy1(){
-        game.roll(5);
-        game.roll(5);
-        game.roll(1);
-        for(int i =0; i<17; i++){
-            game.roll(0);
-        }
-        int actual = game.getScore();
-        Assertions.assertThat(actual).isEqualTo(12);
-    }
-
-    @Test
-    public void canRollAStrikeFollowedBy1then1(){
-        game.roll(10);
-        game.roll(1);
-        game.roll(1);
-        for(int i =0; i<17; i++){
-            game.roll(0);
-        }
-        int actual = game.getScore();
-        Assertions.assertThat(actual).isEqualTo(14);
-    }
+//    @Test
+//    public void canRollASpareFollowedBy1(){
+//        game.roll(5);
+//        game.roll(5);
+//        game.roll(1);
+//        for(int i =0; i<17; i++){
+//            game.roll(0);
+//        }
+//        int actual = game.getScore();
+//        Assertions.assertThat(actual).isEqualTo(12);
+//    }
+//
+//    @Test
+//    public void canRollAStrikeFollowedBy1then1(){
+//        game.roll(10);
+//        game.roll(1);
+//        game.roll(1);
+//        for(int i =0; i<17; i++){
+//            game.roll(0);
+//        }
+//        int actual = game.getScore();
+//        Assertions.assertThat(actual).isEqualTo(14);
+//    }
 }
